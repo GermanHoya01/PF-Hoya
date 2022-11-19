@@ -1,0 +1,46 @@
+
+
+$color-celeste:  rgb(0, 179, 255);
+
+//LISTAS//
+
+$colores:
+rgb(0, 179, 255)
+black,
+blue,
+lightblue,
+white;
+
+$font-family:
+italic,
+'Montserrat', sans-serif;
+
+$font-size:
+60px,
+40px,
+45px,
+25px,
+20px;
+
+main{
+    font-family: nth($font-family, 1);
+}
+header{
+    background-color: nth($colores, 1);
+}
+footer{
+    background-color: nth($colores, 1); 
+}
+
+//EXTENDS//
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps{
+    box-shadow: gray;
+    @extend %flex,
+}

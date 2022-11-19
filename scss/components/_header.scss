@@ -1,0 +1,51 @@
+@import "../base/variables";
+
+/*---HEADER---*/
+
+header {
+    background-color: rgb(0, 179, 255);
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    h1 {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        font-weight: 50px;
+        #btn-menu {
+            display: none;
+            label {
+                display: none;
+                &:hover {
+                    cursor: pointer;
+                    background: rgba(35, 76, 131, 0.3);
+                }
+            }
+        }
+    }
+    nav{   
+        ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 10px;
+        text-transform: uppercase;
+        &:hover {
+            cursor: pointer;
+            background: rgba(35, 76, 131, 0.3);
+            transition: all 1s;
+            a {
+                padding: 15px;
+                list-style: none;
+                text-decoration: none;
+                color: black
+            }
+        }
+        }
+    }
+} 

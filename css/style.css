@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+/** COMIENZO DEL RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** FIN DEL RESET*/
+
+/* COMIENZO DE LA GRILLA DEL BODY */
+
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 500px 50px;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section-p section-p"
+        "footer footer";
+}
+
+.grid-contenedor-psico {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 600px 250px 50px;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "center center"
+        "footer footer";
+}
+
+.grid-contenedor-trata {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 455px 50px;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section-trata section-trata"
+        "footer footer";
+}
+
+.grid-contenedor-med {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 500px 50px;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section-med section-med"
+        "footer footer";
+}
+
+.grid-contenedor-contac {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 400px 700px 50px;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section-contac section-contac"
+        "footer footer";
+}
+
+/* FIN DE LA GRILLA DEL BODY */
+
+/*-----HEADER-----*/
+
+header {
+    background-color: rgb(0, 179, 255);
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+header h1 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+header nav ul li a {
+    padding: 15px;
+    list-style: none;
+    text-decoration: none;
+    color: black
+}
+
+header li:hover {
+    cursor: pointer;
+    background: rgba(35, 76, 131, 0.3);
+    transition: all 1s;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(35, 76, 131, 0.3);
+}
+
+/*-----MAIN....*/
+
+main {
+    grid-area: main;
+}
+
+.hero {
+    background-image: url("../img/pexels-pixabay-53594.jpg");
+    width: 100%;
+    height: calc(100vh - 75.56px);
+    background-attachment: fixed;
+}
+
+.hero {
+    background-color: white;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero div {
+    color: white;
+    font-size: 60px;
+    border: 2px solid white;
+    padding: 50px;
+}
+
+.hero p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.sol {
+    background-image: url("../img/La\ vida\ en\ estado\ puro\ \(El\ sol\)\ 640x540.jpg");
+    width: 100%;
+    height: calc(100vh - 75.56px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.meditacion {
+    background-image: url("../img/609f291c9dea564033183850b3a5f25f--self-development-spiritual-development.jpg");
+    width: 100%;
+    height: calc(100vh - 75.56px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Psico {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.Psico h3 {
+    color: black;
+    font-family: italic;
+    font-size: 45px;
+    font-weight: 40px;
+}
+
+.Psico div p {
+    margin: 20px;
+}
+
+/*---SECTION---*/
+
+.section-p {
+    background-image: url("../img/scrnli_9_10_2022_16-54-51.png");
+    background-color: white;
+    background-size: cover;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 525px;
+    width: 100%;
+    height: calc(100vh - 75.56px);
+    grid-area: section-p;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.center h2 {
+    color: black;
+    font-family: italic;
+    font-size: 45px;
+    font-weight: 10px;
+    text-align: center;
+    margin: 0 auto;
+    height: 55px;
+    background-color: none;
+}
+
+.center p {
+    font-size: 20px;
+    font-weight: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+}
+
+.section-med {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    color: black;
+    font-family: italic;
+    font-size: 25px;
+    font-weight: 40px;
+}
+
+.section-med h2 {
+    color: black;
+    font-family: italic;
+    font-size: 40px;
+    font-weight: 20px;
+    text-align: center;
+    height: 80px;
+}
+
+.section-med p {
+    text-align: center;
+}
+
+.videos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.trata-h2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-family: italic;
+    font-size: 30px;
+    font-weight: 10px;
+    margin: 70px;
+}
+
+.trata-p {
+    font-size: 25px;
+    font-weight: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.contacto {
+    background: none;
+    padding: 150px -50px;
+    font-family: "Monteserrat", sans-serif;
+}
+
+.formulario {
+    width: 100px;
+    margin: 100px;
+    padding: 10px 20px;
+    box-sizing: none;
+    margin-top: 80px;
+}
+
+.titulo-formulario {
+    font-size: 18px;
+    font-weight: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: rgb(5, 5, 5);
+    text-align: justify;
+    font-family: italic;
+    margin: 100px;
+    margin-bottom: 8px;
+}
+
+.contacto input {
+    width: 500%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: "Monteserrat", sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid grey;
+}
+
+.contacto input:focus {
+    border: 2px solid lightblue;
+}
+
+.contacto p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.contacto button {
+    float: center;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: "Monteserrat", sans-serif;
+    border: 2px solid gray;
+    background: 0;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+    align-items: center;
+}
+
+.contacto button:hover {
+    background: gray;
+    color: white;
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----footer....*/
+
+footer {
+    background-color: rgb(0, 179, 255);
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    font-size: 12px;
+    font-weight: 200;
+    grid-area: footer;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*---fin del footer---*/
+
+/* TODO: INICIO DE LAS MEDIA QUERIES */
+
+/* Media Queries Index*/
+
+@media (max-width:850px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section-p section-p"
+            "footer footer";
+    }
+
+    header label {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        background-color: rgb(0, 179, 255);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 1.5s;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        display: inline-block;
+    }
+
+    .nav li {
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked~.nav {
+        margin: 0%;
+    }
+}
+
+@media (max-width:840px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section-p section-p"
+            "footer footer";
+    }
+
+    .section-p {
+        background-image: url("../img/scrnli_9_10_2022_16-54-51.png");
+        background-color: white;
+        background-size: cover;
+        font-style: italic;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 125px;
+        width: 100%;
+        height: calc(100vh - 75.56px);
+        grid-area: section-p;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width:555px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section-p section-p"
+            "footer footer";
+    }
+
+    .section-p {
+        background-image: url("../img/scrnli_9_10_2022_16-54-51.png");
+        background-color: white;
+        background-size: cover;
+        font-style: italic;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 125px;
+        width: 100%;
+        height: calc(100vh - 75.56px);
+        grid-area: section-p;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width:498px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main"
+            "section-p section-p"
+            "footer footer";
+    }
+
+    .hero div {
+        color: white;
+        font-size: 30px;
+        border: 2px solid white;
+        padding: 50px;
+    }
+
+    .Psico img {
+        display: none;
+    }
+}
+
+/* Fin Media Queries Index*/
+
+/*Media Queries Psicoterapia*/
+
+@media (max-width:680px) {
+    .grid-contenedor-psico {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 600px 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section section"
+            "footer footer";
+    }
+
+    .sol {
+        background-image: url("../img/La\ vida\ en\ estado\ puro\ \(El\ sol\)\ 640x540.jpg");
+        width: 100%;
+        height: calc(100vh - 75.56px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width:550px) {
+    .grid-contenedor-psico {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 600px 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section section"
+            "footer footer";
+    }
+
+    .sol {
+        background-image: url("../img/pexels-pixabay-53594.jpg");
+        width: 100%;
+        height: calc(100vh - 75.56px);
+        background-attachment: fixed;
+    }
+}
+
+/*Fin Media Queries Psicoterapia*/
+
+/*Media Queries Meditacion*/
+
+@media (max-width:840px) {
+    .grid-contenedor-med {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section-med"
+            "footer";
+    }
+
+    .section-med {
+        display: grid;
+        align-items: center;
+    }
+
+    .videos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:630px) {
+    .grid-contenedor-med {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section-med"
+            "footer";
+    }
+
+    .meditacion {
+        background-image: url("../img/pexels-pixabay-53594.jpg");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: relative;
+    }
+
+    .section-med h2 {
+        font-size: 24px;
+        font-weight: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-med p {
+        font-size: 18px;
+        font-weight: 25px;
+    }
+}
+
+/*Fin Media Queries Meditacion*/
+
+/*Media Queries Tratamientos*/
+
+@media (max-width:630px) {
+    .grid-contenedor-trata {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 455px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section-trata section-trata"
+            "footer footer";
+    }
+
+    .trata-h2 {
+        font-size: 24px;
+        font-weight: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trata-p {
+        font-size: 18px;
+        font-weight: 25px;
+    }
+}
+
+/*Fin Media Queries Tratamientos*/
+
+/*Media Queries Contacto*/
+
+@media (max-width:1100px) {
+    .grid-contenedor-contac {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 400px 700px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section-contac section-contac"
+            "footer footer";
+    }
+
+    .formulario {
+        width: 100px;
+        margin: 50px;
+        padding: 10px 20px;
+        box-sizing: none;
+        margin-top: 80px;
+    }
+
+    .maps {
+        width: 400px;
+    }
+}
+
+@media (max-width:800px) {
+    .grid-contenedor-contac {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 400px 600px 600px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section-contac"
+            "maps"
+            "footer";
+    }
+
+    .formulario {
+        width: 100px;
+        margin: 225px;
+        padding: 10px 20px;
+        box-sizing: none;
+        margin-top: 80px;
+    }
+
+    .section-contac {
+        display: grid;
+    }
+
+    .maps {
+        width: 450px;
+        margin: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:700px) {
+    .grid-contenedor-contac {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 400px 600px 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section-contac"
+            "maps"
+            "footer";
+    }
+
+    .formulario {
+        width: 125px;
+        margin: 125px;
+        padding: 10px 20px;
+        box-sizing: none;
+        margin-top: 80px;
+    }
+}
+
+/*Fin Media Queries Contacto*/
+
+/* TODO: FIN DE LAS MEDIA QUERIES */
+
+/*COMENTARIOS*/
+
+/*! UNIDADES ABSOLUTAS*/
+/* px (pieles): es la unidad q usan las pantallas
+
+/*! UNIDADES RELATIVAS*/
+/*Rem: relativa a la configuracion de tamaño de la raiz 
+(etiqueta html). */
+/*Porcentaje: tomando en cuenta que 16px es 100%. */
+/*viewport: se utilzan para layouts responsivos 
+(mas adelante). */

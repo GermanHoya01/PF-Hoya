@@ -1,0 +1,378 @@
+/* TODO: INICIO DE LAS MEDIA QUERIES */
+
+/* Media Queries Index*/
+
+@media (max-width:850px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section-p section-p"
+            "footer footer";
+    }
+
+    header label {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        background-color: rgb(0, 179, 255);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 1.5s;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        display: inline-block;
+    }
+
+    .nav li {
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked~.nav {
+        margin: 0%;
+    }
+}
+
+@media (max-width:840px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section-p section-p"
+            "footer footer";
+    }
+
+    .section-p {
+        background-image: url("../img/scrnli_9_10_2022_16-54-51.png");
+        background-color: white;
+        background-size: cover;
+        font-style: italic;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 125px;
+        width: 100%;
+        height: calc(100vh - 75.56px);
+        grid-area: section-p;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width:555px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section-p section-p"
+            "footer footer";
+    }
+
+    .section-p {
+        background-image: url("../img/scrnli_9_10_2022_16-54-51.png");
+        background-color: white;
+        background-size: cover;
+        font-style: italic;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 125px;
+        width: 100%;
+        height: calc(100vh - 75.56px);
+        grid-area: section-p;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width:498px) {
+    .grid-contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main"
+            "section-p section-p"
+            "footer footer";
+    }
+
+    .hero div {
+        color: white;
+        font-size: 30px;
+        border: 2px solid white;
+        padding: 50px;
+    }
+
+    .Psico img {
+        display: none;
+    }
+}
+
+/* Fin Media Queries Index*/
+
+/*Media Queries Psicoterapia*/
+
+@media (max-width:680px) {
+    .grid-contenedor-psico {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 600px 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section section"
+            "footer footer";
+    }
+
+    .sol {
+        background-image: url("../img/La\ vida\ en\ estado\ puro\ \(El\ sol\)\ 640x540.jpg");
+        width: 100%;
+        height: calc(100vh - 75.56px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width:550px) {
+    .grid-contenedor-psico {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 600px 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section section"
+            "footer footer";
+    }
+
+    .sol {
+        background-image: url("../img/pexels-pixabay-53594.jpg");
+        width: 100%;
+        height: calc(100vh - 75.56px);
+        background-attachment: fixed;
+    }
+}
+
+/*Fin Media Queries Psicoterapia*/
+
+/*Media Queries Meditacion*/
+
+@media (max-width:840px) {
+    .grid-contenedor-med {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section-med"
+            "footer";
+    }
+
+    .section-med {
+        display: grid;
+        align-items: center;
+    }
+
+    .videos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:630px) {
+    .grid-contenedor-med {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section-med"
+            "footer";
+    }
+
+    .meditacion {
+        background-image: url("../img/pexels-pixabay-53594.jpg");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: relative;
+    }
+
+    .section-med h2 {
+        font-size: 24px;
+        font-weight: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-med p {
+        font-size: 18px;
+        font-weight: 25px;
+    }
+}
+
+/*Fin Media Queries Meditacion*/
+
+/*Media Queries Tratamientos*/
+
+@media (max-width:630px) {
+    .grid-contenedor-trata {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 455px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section-trata section-trata"
+            "footer footer";
+    }
+
+    .trata-h2 {
+        font-size: 24px;
+        font-weight: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trata-p {
+        font-size: 18px;
+        font-weight: 25px;
+    }
+}
+
+/*Fin Media Queries Tratamientos*/
+
+/*Media Queries Contacto*/
+
+@media (max-width:1100px) {
+    .grid-contenedor-contac {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 400px 700px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section-contac section-contac"
+            "footer footer";
+    }
+
+    .formulario {
+        width: 100px;
+        margin: 50px;
+        padding: 10px 20px;
+        box-sizing: none;
+        margin-top: 80px;
+    }
+
+    .maps {
+        width: 400px;
+    }
+}
+
+@media (max-width:800px) {
+    .grid-contenedor-contac {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 400px 600px 600px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section-contac"
+            "maps"
+            "footer";
+    }
+
+    .formulario {
+        width: 100px;
+        margin: 225px;
+        padding: 10px 20px;
+        box-sizing: none;
+        margin-top: 80px;
+    }
+
+    .section-contac {
+        display: grid;
+    }
+
+    .maps {
+        width: 450px;
+        margin: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:700px) {
+    .grid-contenedor-contac {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 400px 600px 500px 50px;
+        gap: 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "section-contac"
+            "maps"
+            "footer";
+    }
+
+    .formulario {
+        width: 125px;
+        margin: 125px;
+        padding: 10px 20px;
+        box-sizing: none;
+        margin-top: 80px;
+    }
+}
+
+/*Fin Media Queries Contacto*/
+
+/* TODO: FIN DE LAS MEDIA QUERIES */

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+/** COMIENZO DEL RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** FIN DEL RESET*//* COMIENZO DE LA GRILLA DEL BODY */
+
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 500px 50px;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section-p section-p"
+        "footer footer";
+}
+
+.grid-contenedor-psico {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 600px 250px 50px;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "center center"
+        "footer footer";
+}
+
+.grid-contenedor-trata {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 455px 50px;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section-trata section-trata"
+        "footer footer";
+}
+
+.grid-contenedor-med {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 500px 50px;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section-med section-med"
+        "footer footer";
+}
+
+.grid-contenedor-contac {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 400px 700px 50px;
+    gap: 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section-contac section-contac"
+        "footer footer";
+}
+
+/* FIN DE LA GRILLA DEL BODY */

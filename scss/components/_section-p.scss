@@ -1,0 +1,157 @@
+/*---SECTION---*/
+
+.section-p {
+    background-image: url("../img/scrnli_9_10_2022_16-54-51.png");
+    background-color: white;
+    background-size: cover;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 525px;
+    width: 100%;
+    height: calc(100vh - 75.56px);
+    grid-area: section-p;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.center h2 {
+    color: black;
+    font-family: italic;
+    font-size: 45px;
+    font-weight: 10px;
+    text-align: center;
+    margin: 0 auto;
+    height: 55px;
+    background-color: none;
+    p {
+        font-size: 20px;
+        font-weight: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin: 40px;
+    }
+}
+
+.section-med {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    color: black;
+    font-family: italic;
+    font-size: 25px;
+    font-weight: 40px;
+    h2 {
+        color: black;
+        font-family: italic;
+        font-size: 40px;
+        font-weight: 20px;
+        text-align: center;
+        height: 80px;
+    }
+    p {
+        text-align: center;
+    }
+    .videos {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.trata-h2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-family: italic;
+    font-size: 30px;
+    font-weight: 10px;
+    margin: 70px;
+}
+
+.trata-p {
+    font-size: 25px;
+    font-weight: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.contacto {
+    background: none;
+    padding: 150px -50px;
+    font-family: "Monteserrat", sans-serif;
+    .formulario {
+        width: 100px;
+        margin: 100px;
+        padding: 10px 20px;
+        box-sizing: none;
+        margin-top: 80px;
+        .titulo-formulario {
+            font-size: 18px;
+            font-weight: 10px;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            color: rgb(5, 5, 5);
+            text-align: justify;
+            font-family: italic;
+            margin: 100px;
+            margin-bottom: 8px;
+        }
+        &:before {
+            content: attr(type);
+            display: block;
+            margin: 28px 0 0;
+            font-size: 14px;
+            color: gray;
+        }
+        input {
+            width: 500%;
+            padding: 10px;
+            box-sizing: border-box;
+            background: none;
+            outline: none;
+            resize: none;
+            border: 0;
+            font-family: "Monteserrat", sans-serif;
+            transition: all .3s;
+            border-bottom: 2px solid grey;
+            &:focus {
+                border: 2px solid lightblue;
+            }
+        }
+        button {
+            float: center;
+            padding: 8px 12px;
+            margin: 8px 0 0;
+            font-family: "Monteserrat", sans-serif;
+            border: 2px solid gray;
+            background: 0;
+            color: black;
+            cursor: pointer;
+            transition: all .3s;
+            align-items: center;
+            &:hover {
+                background: gray;
+                color: white;
+            }
+        }
+    }
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
